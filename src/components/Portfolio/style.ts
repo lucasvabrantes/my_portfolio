@@ -38,7 +38,6 @@ export const StyledSection = styled.section`
         li {
             display: flex;
             flex-wrap: wrap;
-            flex-direction: column;
             justify-content: space-between;
             min-height: 400px;
             width: 350px;
@@ -53,7 +52,7 @@ export const StyledSection = styled.section`
             }
             .repoImg {
                 width: 100%;
-                height: 200;
+                height: 200px;
             }
 
             .repoName {
