@@ -1,8 +1,7 @@
 import { StyledSection } from "./style";
-import GitHub from "../../assets/github.svg";
-import Url from "../../assets/url.svg";
 import { StyledParagraphOne, StyledTitle } from "@/styles/typography";
 import { repositoriesDatabase } from "@/database";
+import Image from "next/image";
 
 export const Portfolio = () => {
     return (
@@ -22,10 +21,12 @@ export const Portfolio = () => {
                     {repositoriesDatabase.map((repo) => {
                         return (
                             <li key={repo.id}>
-                                <img
+                                <Image
                                     className="repoImg"
                                     src={repo.img}
                                     alt=""
+                                    width={100}
+                                    height={100}
                                 />
                                 <p className="repoName">{repo.name}</p>
                                 <p className="repoDescription">
@@ -33,10 +34,20 @@ export const Portfolio = () => {
                                 </p>
                                 <div className="footerItem">
                                     <a href={repo.url_deploy} target="_blank">
-                                        <img src={Url} alt="" />
+                                        <Image
+                                            src="/images/url.svg"
+                                            alt=""
+                                            width={150}
+                                            height={150}
+                                        />
                                     </a>
                                     <a href={repo.url_repo} target="_blank">
-                                        <img src={GitHub} alt="" />
+                                        <Image
+                                            src="/images/github.svg"
+                                            alt=""
+                                            width={250}
+                                            height={250}
+                                        />
                                     </a>
                                 </div>
                             </li>

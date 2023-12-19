@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
     ContactsContainer,
     EmailContainer,
@@ -5,29 +6,35 @@ import {
     StyledWelcomeText,
     WelcomeSection,
 } from "./style";
-import git from "../../assets/git.svg";
-import linkedin from "../../assets/linkedin.svg";
-import telegram from "../../assets/telegram.svg";
-import Me from "../../assets/me.png";
-import Whatsapp from "../../assets/whatsapp.svg";
+import Image from "next/image";
 
 export const WelcomeContainer = () => {
     return (
         <WelcomeSection>
             <ContactsContainer>
                 <StyledLink>
-                    <img src={git} id="git" alt="link para o github" />
+                    <Image
+                        src="/images/git.svg"
+                        id="git"
+                        width={50}
+                        height={50}
+                        alt="link para o github"
+                    />
                 </StyledLink>
                 <StyledLink>
-                    <img
-                        src={linkedin}
+                    <Image
+                        width={50}
+                        height={50}
+                        src="/images/linkedin.svg"
                         id="linkedin"
                         alt="link para o linkedin"
                     />
                 </StyledLink>
                 <StyledLink>
-                    <img
-                        src={telegram}
+                    <Image
+                        width={50}
+                        height={50}
+                        src="/images/telegram.svg"
                         id="telegram"
                         alt="link para o telegram"
                     />
@@ -42,8 +49,11 @@ export const WelcomeContainer = () => {
                     </StyledWelcomeText>
 
                     <figure>
-                        <img
-                            src={Me}
+                        <Image
+                            width={200}
+                            height={200}
+                            priority={true}
+                            src="/images/me.png"
                             alt="Lucas Abrantes terminando o passeio no Museu do Amanhã(RJ). Ao fundo, pode-se ver um saxofonista tocando num lindo por do sol."
                         />
                         <EmailContainer>
@@ -59,8 +69,13 @@ export const WelcomeContainer = () => {
                         Academy Brasil. Atualmente estudando backend com Node.js
                     </p>
                     <button className="contactMe">
-                        <img src={Whatsapp} alt="Ícone Whatsapp" />
-                        <a href="https://wa.me/5596991111911">Whatsapp</a>
+                        <Image
+                            width={50}
+                            height={50}
+                            src="/images/whatsapp.svg"
+                            alt="Ícone Whatsapp"
+                        />
+                        <Link href="https://wa.me/5596991111911">Whatsapp</Link>
                     </button>
                 </div>
             </div>

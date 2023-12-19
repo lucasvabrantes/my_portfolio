@@ -1,13 +1,5 @@
+import Image from "next/image";
 import { StyledSection } from "./style";
-import HTML from "../../assets/skillsIcons/html.svg";
-import GIT from "../../assets/skillsIcons/git.svg";
-import CSS from "../../assets/skillsIcons/css.svg";
-import JS from "../../assets/skillsIcons/js.svg";
-import NODE from "../../assets/skillsIcons/node.svg";
-import PSQL from "../../assets/skillsIcons/psql.svg";
-import REACT from "../../assets/skillsIcons/react.svg";
-import TS from "../../assets/skillsIcons/ts.svg";
-import EX from "../../assets/skillsIcons/express.svg";
 import { StyledTitle } from "@/styles/typography";
 
 export const HardSkills = () => {
@@ -19,32 +11,77 @@ export const HardSkills = () => {
             </div>
             <ul>
                 <li>
-                    <img src={HTML} alt="" />
+                    <Image
+                        width={100}
+                        height={100}
+                        src="/images/skillsIcons/html.svg"
+                        alt=""
+                    />
                 </li>
                 <li>
-                    <img src={CSS} alt="" />
+                    <Image
+                        width={100}
+                        height={100}
+                        src="/images/skillsIcons/css.svg"
+                        alt=""
+                    />
                 </li>
                 <li>
-                    <img src={JS} alt="" />
+                    <Image
+                        width={100}
+                        height={100}
+                        src="/images/skillsIcons/js.svg"
+                        alt=""
+                    />
                 </li>
                 <li>
-                    <img src={TS} alt="" />
+                    <Image
+                        width={100}
+                        height={100}
+                        src="/images/skillsIcons/ts.svg"
+                        alt=""
+                    />
                 </li>
                 <li>
-                    <img src={REACT} alt="" />
+                    <Image
+                        width={100}
+                        height={100}
+                        src="/images/skillsIcons/react.svg"
+                        alt=""
+                    />
                 </li>
                 <li>
-                    <img src={NODE} alt="" />
+                    <Image
+                        width={100}
+                        height={100}
+                        src="/images/skillsIcons/node.svg"
+                        alt=""
+                    />
                 </li>
                 <li>
-                    <img src={EX} alt="" />
+                    <Image
+                        width={100}
+                        height={100}
+                        src="/images/skillsIcons/express.svg"
+                        alt=""
+                    />
                 </li>
 
                 <li>
-                    <img src={PSQL} alt="" />
+                    <Image
+                        width={100}
+                        height={100}
+                        src="/images/skillsIcons/psql.svg"
+                        alt=""
+                    />
                 </li>
                 <li>
-                    <img src={GIT} alt="" />
+                    <Image
+                        width={100}
+                        height={100}
+                        src="/images/skillsIcons/git.svg"
+                        alt=""
+                    />
                 </li>
             </ul>
         </StyledSection>

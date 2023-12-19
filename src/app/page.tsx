@@ -23,7 +23,9 @@ export default function Home() {
         }
     };
 
-    window.addEventListener("scroll", changeNavbarColor);
+    if (typeof window !== "undefined") {
+        window.addEventListener("scroll", changeNavbarColor);
+    }
 
     return (
         <>
