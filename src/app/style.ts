@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledBody = styled.div`
     display: flex;
-    background-image: url("https://dsm01pap006files.storage.live.com/y4mvM2NYJhbA4TbrZVHrzIKpPn-DZQLKJEZ0h7f_2tvaWHJMGJPLQ3-TUIR1B1OB_pyhVGNiP-xdtCskTEAD4beuO9W_mDp72OH-TBpmpqC7A_iCF-6ycxmxAdQseXs_YVyDlBPU_996oCuw6p93wZAxwkUSw1fsTpQ4ywy3KwSNkc5uFtQYCGwMnbGJXtVt5uneEJZOtSD7NXtVu9s3AqgcNrJrKgkAYtHVbOuzkkqgRQ?encodeFailures=1&width=305&height=305");
+    background-image: url("https://i.imgur.com/uJ7fjbj.jpg");
     background-repeat: repeat;
     background-position: center;
     width: 100vw;
