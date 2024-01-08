@@ -31,7 +31,7 @@ export const Header = ({ colorChange }: THeaderProps) => {
                     <Image
                         width={25}
                         height={25}
-                        src="../../public/images/menuIcon.svg"
+                        src="/images/menuIcon.svg"
                         alt="Menu Bar"
                     />
                 </button>
@@ -51,7 +51,7 @@ export const Header = ({ colorChange }: THeaderProps) => {
                     <span className={colorChange ? "numberChange" : ""}>
                         03. &nbsp;
                     </span>
-                    <p> &lt;portfolio&gt; </p>
+                    <p> &lt;projetos&gt; </p>
                 </a>
                 <a href="#contact">
                     <span className={colorChange ? "numberChange" : ""}>

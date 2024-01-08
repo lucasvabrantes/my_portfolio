@@ -66,7 +66,6 @@ export const HardSkills = () => {
                         alt=""
                     />
                 </li>
-
                 <li>
                     <Image
                         width={100}
@@ -75,11 +74,36 @@ export const HardSkills = () => {
                         alt=""
                     />
                 </li>
+
+                <li>
+                    <Image
+                        width={100}
+                        height={100}
+                        src="/images/skillsIcons/next.svg"
+                        alt=""
+                    />
+                </li>
+                <li>
+                    <Image
+                        width={100}
+                        height={100}
+                        src="/images/skillsIcons/nest.svg"
+                        alt=""
+                    />
+                </li>
                 <li>
                     <Image
                         width={100}
                         height={100}
                         src="/images/skillsIcons/git.svg"
+                        alt=""
+                    />
+                </li>
+                <li>
+                    <Image
+                        width={100}
+                        height={100}
+                        src="/images/skillsIcons/python.svg"
                         alt=""
                     />
                 </li>

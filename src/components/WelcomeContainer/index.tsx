@@ -12,7 +12,10 @@ export const WelcomeContainer = () => {
     return (
         <WelcomeSection>
             <ContactsContainer>
-                <StyledLink>
+                <StyledLink
+                    href="https://github.com/lucasvabrantes"
+                    target="_blank"
+                >
                     <Image
                         src="/images/git.svg"
                         id="git"
@@ -21,7 +24,10 @@ export const WelcomeContainer = () => {
                         alt="link para o github"
                     />
                 </StyledLink>
-                <StyledLink>
+                <StyledLink
+                    href="https://www.linkedin.com/in/lucasvabrantes/"
+                    target="_blank"
+                >
                     <Image
                         width={50}
                         height={50}
@@ -30,7 +36,7 @@ export const WelcomeContainer = () => {
                         alt="link para o linkedin"
                     />
                 </StyledLink>
-                <StyledLink>
+                <StyledLink href="https://t.me/lucasabrts" target="_blank">
                     <Image
                         width={50}
                         height={50}
@@ -65,8 +71,8 @@ export const WelcomeContainer = () => {
 
                 <div className="brieflyContainer">
                     <p>
-                        Eu sou um desenvolvedor Front End formado pela Kenzie
-                        Academy Brasil. Atualmente estudando backend com Node.js
+                        Eu sou um desenvolvedor Full Stack formado pela Kenzie
+                        Academy Brasil. Atualmente
                     </p>
                     <button className="contactMe">
                         <Image

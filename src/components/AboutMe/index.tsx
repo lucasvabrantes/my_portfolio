@@ -10,17 +10,19 @@ export const AboutMe = () => {
             </div>
             <div>
                 <StyledParagraphOne>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Aperiam iure tenetur perspiciatis nulla nemo est nobis animi
-                    debitis! Doloribus consectetur aut, eligendi ipsam
-                    exercitationem suscipit aperiam possimus expedita recusandae
-                    similique!
+                    Desde criança sou fascinado por computadores. E tendo sempre
+                    como sonho trabalhar com algo relacionado, iniciei minha
+                    transição de carreira para a área da programação através do
+                    curso de desenvolvimento Full Stack oportunizado pela Kenzie
+                    Academy Brasil.
                 </StyledParagraphOne>
                 <StyledParagraphOne>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sequi officia, voluptates nihil consectetur ipsum adipisci
-                    laborum labore maiores beatae minus aut. Ratione recusandae
-                    consequuntur laborum explicabo quidem eum sapiente harum.
+                    Após 1 ano de curso, e mais de 30 projetos desenvolvidos,
+                    que abarcam tanto front-end quanto back-end, construí sólido
+                    conhecimento em linguagens como JavaScript, TypeScript e
+                    Python. Atualmente estou aprofundando meus conhecimentos em
+                    TypeScript, ao mesmo tempo em que desenvolvo um projeto novo
+                    e mais complexo para exercitar os novos conhecimentos.
                 </StyledParagraphOne>
             </div>
         </StyledSection>

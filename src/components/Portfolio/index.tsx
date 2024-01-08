@@ -8,7 +8,7 @@ export const Portfolio = () => {
         <StyledSection id="portfolio">
             <div className="portfolioHeader">
                 <StyledTitle textColor="cyan">03.</StyledTitle>
-                <StyledTitle textColor="grey">Portfólio</StyledTitle>
+                <StyledTitle textColor="grey">Projetos</StyledTitle>
             </div>
             <div>
                 <StyledParagraphOne>

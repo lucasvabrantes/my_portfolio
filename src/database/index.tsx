@@ -37,4 +37,33 @@ export const repositoriesDatabase: Array<TRepoData> = [
         description:
             "Basicamente, trata-se de uma aplicação totalmente responsiva, na qual é possível adicionar valores, sendo estes, ou uma despesa, ou uma entrada. Também é possível excluir uma transação individualmente da lista de resumo financeiro. ",
     },
+    {
+        id: 4,
+        url_deploy: "https://lucasabrantes.vercel.app/",
+        url_repo: "https://github.com/lucasvabrantes/my_portfolio",
+        img: "/images/my_portfolio.png",
+        name: "Portfólio Lucas Abrantes",
+        description:
+            "Repositório deste Portfólio. Projeto construído com Nextjs, styled-components, ",
+    },
+    {
+        id: 5,
+        url_deploy:
+            "https://kenzie-academy-brasil-developers-react-entrega-s1-nfzmm9bcj.vercel.app/",
+        url_repo: "https://github.com/lucasvabrantes/Nu-Kenzie",
+        img: "/images/api.png",
+        name: "Nu Kenzie",
+        description:
+            "Basicamente, trata-se de uma aplicação totalmente responsiva, na qual é possível adicionar valores, sendo estes, ou uma despesa, ou uma entrada. Também é possível excluir uma transação individualmente da lista de resumo financeiro. ",
+    },
+    {
+        id: 6,
+        url_deploy:
+            "https://kenzie-academy-brasil-developers-react-entrega-s1-nfzmm9bcj.vercel.app/",
+        url_repo: "https://github.com/lucasvabrantes/Nu-Kenzie",
+        img: "/images/api.png",
+        name: "Nu Kenzie",
+        description:
+            "Basicamente, trata-se de uma aplicação totalmente responsiva, na qual é possível adicionar valores, sendo estes, ou uma despesa, ou uma entrada. Também é possível excluir uma transação individualmente da lista de resumo financeiro. ",
+    },
 ];
