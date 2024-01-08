@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    padding: 35px 0px;
+    padding: 39px 0px;
     width: 100%;
     max-width: 900px;
     display: flex;
@@ -12,12 +12,14 @@ export const StyledHeader = styled.header`
     border-bottom: none;
     border-top: none;
     position: fixed;
-    z-index: 99;
+    top: 0;
+    z-index: 10;
     transition: 0.8s;
 
     @media (max-width: 768px) {
         padding: 10px 0px;
         background: rgba(34, 184, 207, 0.35);
+        justify-content: center;
     }
 `;
 
@@ -27,6 +29,11 @@ export const StyledNav = styled.nav`
     background: transparent;
     width: 100%;
     padding: 0px 15px;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        padding: 0;
+    }
 
     a {
         display: flex;

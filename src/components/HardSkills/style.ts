@@ -6,7 +6,7 @@ export const StyledSection = styled.section`
     padding: 40px 50px;
     gap: 2rem;
     width: 100%;
-    max-width: 900px;
+    max-width: 100%;
     background: transparent;
     backdrop-filter: blur(3px);
     border: 1.5px solid var(--grey-300);
@@ -16,7 +16,7 @@ export const StyledSection = styled.section`
     .hardSkillsHeader {
         width: 100;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         align-content: center;
         margin-left: 1rem;

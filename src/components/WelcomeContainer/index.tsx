@@ -72,7 +72,7 @@ export const WelcomeContainer = () => {
                 <div className="brieflyContainer">
                     <p>
                         Eu sou um desenvolvedor Full Stack formado pela Kenzie
-                        Academy Brasil. Atualmente
+                        Academy Brasil.
                     </p>
                     <button className="contactMe">
                         <Image

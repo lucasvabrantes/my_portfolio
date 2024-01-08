@@ -13,10 +13,15 @@ export const StyledSidebar = styled.div`
     padding: 20px 0px;
     position: absolute;
     animation: showUp 0.5s normal;
+    transition: 0.4s;
 
     a {
+        color: white;
         text-decoration: none;
         font-size: 3rem;
+        &:active {
+            color: white;
+        }
     }
 
     @keyframes showUp {

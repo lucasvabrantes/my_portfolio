@@ -4,7 +4,7 @@ export const WelcomeSection = styled.section`
     display: flex;
     padding: 40px 50px 0px;
     width: 100%;
-    max-width: 900px;
+    max-width: 100%;
     background: transparent;
     backdrop-filter: blur(3px);
     border: 1.5px solid var(--grey-300);

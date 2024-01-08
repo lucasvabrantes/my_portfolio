@@ -8,13 +8,8 @@ export const StyledBody = styled.div`
     width: 100vw;
     position: relative;
 
-    div-first:child {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        width: 100%;
+    div:first-child {
+        max-width: 900px;
         margin: 0 auto;
     }
 
