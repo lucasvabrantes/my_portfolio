@@ -17,9 +17,10 @@ export const StyledHeader = styled.header`
     transition: 0.8s;
 
     @media (max-width: 768px) {
-        padding: 10px 0px;
+        padding: 15px 0px;
         background: rgba(34, 184, 207, 0.35);
         justify-content: center;
+        position: sticky;
     }
 `;
 

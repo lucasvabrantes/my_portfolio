@@ -25,15 +25,24 @@ export const Header = ({ colorChange }: THeaderProps) => {
 
     return (
         <StyledHeader className={colorChange ? "scrollHide" : ""}>
-            {menuBars && <Sidebar />}
+            {menuBars && <Sidebar isOpen={menuBars} />}
             <StyledNav>
                 <button onClick={toggleMode} className="bars show">
-                    <Image
-                        width={25}
-                        height={25}
-                        src="/images/menuIcon.svg"
-                        alt="Menu Bar"
-                    />
+                    {menuBars ? (
+                        <Image
+                            width={25}
+                            height={25}
+                            src="/images/closeMenu.svg"
+                            alt="Botão para fechar o menu"
+                        />
+                    ) : (
+                        <Image
+                            width={25}
+                            height={25}
+                            src="/images/menuIcon.svg"
+                            alt="Menu Bar"
+                        />
+                    )}
                 </button>
                 <a href="#about">
                     <span className={colorChange ? "numberChange" : ""}>

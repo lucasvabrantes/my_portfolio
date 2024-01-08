@@ -7,7 +7,6 @@ export const StyledSection = styled.section`
     gap: 2rem;
     justify-content: space-between;
     width: 100%;
-    max-width: 100%;
     background: transparent;
     backdrop-filter: blur(3px);
     border: 1.5px solid var(--grey-300);
@@ -19,17 +18,13 @@ export const StyledSection = styled.section`
     }
 
     .aboutMeHeader {
+        height: 80px;
         width: 100;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-        margin-left: 1rem;
     }
 
     div:last-child {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
     }
 `;

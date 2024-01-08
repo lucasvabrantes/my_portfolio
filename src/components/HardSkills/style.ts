@@ -30,6 +30,10 @@ export const StyledSection = styled.section`
         margin-left: 1rem;
         justify-content: flex-start;
 
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+
         li {
             display: flex;
             transition: 0.4s;

@@ -15,12 +15,9 @@ export const StyledSection = styled.section`
     border-bottom: none;
 
     .contactHeader {
-        width: 100;
+        width: 100px;
+        height: 80px;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-        margin-left: 1rem;
     }
 
     .contact {

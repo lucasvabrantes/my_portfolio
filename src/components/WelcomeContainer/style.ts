@@ -11,12 +11,11 @@ export const WelcomeSection = styled.section`
     border-top: none;
     border-bottom: none;
     margin-top: 99px;
-    position: relative;
 
     @media (max-width: 768px) {
         flex-direction: column-reverse;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .welcomeTextAndPhoto {
@@ -129,7 +128,7 @@ export const ContactsContainer = styled.div`
     padding-top: 1rem;
     align-items: center;
     flex-direction: column;
-    height: 400px;
+    /* height: 400px; */
 
     @media (max-width: 768px) {
         height: 100px;
@@ -158,7 +157,7 @@ export const EmailContainer = styled.div`
     p {
         transform: rotate(270deg);
         color: var(--cyan-900);
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         letter-spacing: 0.9px;
         margin: 92px 0px 0px 30px;
         font-family: "Inconsolata", monospace;
