@@ -5,10 +5,12 @@ export const AboutMe = () => {
     return (
         <StyledSection id="about">
             <div className="aboutMeHeader">
-                <StyledTitle textColor="cyan">01.</StyledTitle>
-                <StyledTitle textColor="grey">Sobre mim</StyledTitle>
+                <div>
+                    <StyledTitle textColor="cyan">01.</StyledTitle>
+                    <StyledTitle textColor="grey">Sobre mim</StyledTitle>
+                </div>
             </div>
-            <div>
+            <div className="aboutMeText">
                 <StyledParagraphOne>
                     Desde criança sou fascinado por computadores. E tendo sempre
                     como sonho trabalhar com algo relacionado, iniciei minha

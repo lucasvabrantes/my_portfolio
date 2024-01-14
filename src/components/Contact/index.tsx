@@ -5,9 +5,12 @@ export const Contact = () => {
     return (
         <StyledSection id="contact">
             <div className="contactHeader">
-                <StyledTitle textColor="cyan">04.</StyledTitle>
-                <StyledTitle textColor="grey">Contato</StyledTitle>
+                <div>
+                    <StyledTitle textColor="cyan">04.</StyledTitle>
+                    <StyledTitle textColor="grey">Contato</StyledTitle>
+                </div>
             </div>
+
             <StyledParagraphOne>
                 Fique a vontade para me mandar mensagem caso tenha alguma
                 pergunta ou projeto para realizar. Mas se quiser apenas dar um

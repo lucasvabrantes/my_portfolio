@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
-    padding: 0px 50px;
+    padding: 50px 50px 0px 50px;
     gap: 2rem;
     justify-content: space-between;
     width: 100%;
@@ -18,12 +18,26 @@ export const StyledSection = styled.section`
     }
 
     .aboutMeHeader {
-        height: 80px;
-        width: 100;
-        display: flex;
+        width: 100%;
+
+        div {
+            display: flex;
+            height: 80px;
+            gap: 2rem;
+            align-items: center;
+            margin-left: 16px;
+
+            h2:first-child {
+                width: 50px;
+            }
+
+            h2:last-child {
+                width: 300px;
+            }
+        }
     }
 
-    div:last-child {
+    .aboutMeText {
         display: flex;
         flex-direction: column;
     }

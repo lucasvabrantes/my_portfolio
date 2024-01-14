@@ -6,8 +6,10 @@ export const HardSkills = () => {
     return (
         <StyledSection id="skills">
             <div className="hardSkillsHeader">
-                <StyledTitle textColor="cyan">02.</StyledTitle>
-                <StyledTitle textColor="grey">Skills</StyledTitle>
+                <div>
+                    <StyledTitle textColor="cyan">02.</StyledTitle>
+                    <StyledTitle textColor="grey">Skills</StyledTitle>
+                </div>
             </div>
             <ul>
                 <li>
