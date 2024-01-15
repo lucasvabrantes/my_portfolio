@@ -3,11 +3,10 @@ import styled from "styled-components";
 export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
-    padding: 50px 50px 0px 50px;
+    padding: 50px 50px 0px;
     gap: 2rem;
     justify-content: space-between;
     width: 100%;
-    max-width: 100%;
     background: transparent;
     backdrop-filter: blur(3px);
     border: 1.5px solid var(--grey-300);
