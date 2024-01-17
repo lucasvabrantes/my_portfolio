@@ -70,7 +70,7 @@ export const Header = ({ colorChange }: THeaderProps) => {
             </StyledNav>
             {menuBars && (
                 <nav>
-                    <Sidebar isOpen={menuBars} />
+                    <Sidebar />
                 </nav>
             )}
         </StyledHeader>
