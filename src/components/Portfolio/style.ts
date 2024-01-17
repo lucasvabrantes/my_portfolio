@@ -107,8 +107,13 @@ export const StyledSection = styled.section`
                 justify-content: space-between;
 
                 a img {
-                    min-width: 25px;
+                    width: 25px;
                     height: 25px;
+                }
+
+                a > .gitLink {
+                    height: 30px;
+                    width: 30px;
                 }
 
                 a img:hover {

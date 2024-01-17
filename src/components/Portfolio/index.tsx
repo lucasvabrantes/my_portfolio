@@ -64,6 +64,7 @@ export const Portfolio = () => {
                                     </a>
                                     <a href={repo.url_repo} target="_blank">
                                         <Image
+                                            className="gitLink"
                                             src="/images/github.svg"
                                             alt=""
                                             width={50}
