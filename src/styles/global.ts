@@ -4,13 +4,20 @@ export const GlobalStyle = createGlobalStyle`
 
     *{
         box-sizing: border-box;
-        padding: 0;
+        padding: 0px;
         font-family:var(--font-family);
+        margin:0;
     }
+        
 
     html{
         scroll-behavior: smooth;
         overflow-x:hidden;
+        
+    }
+
+    body{
+        margin:0px;
     }
 
     ul, ol, li{
