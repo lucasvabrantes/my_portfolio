@@ -5,16 +5,18 @@ export const AboutMe = () => {
     return (
         <StyledSection id="about">
             <div className="aboutMeHeader">
-                <StyledTitle textColor="cyan">01.</StyledTitle>
-                <StyledTitle textColor="grey">Sobre mim</StyledTitle>
+                <div>
+                    <StyledTitle textColor="cyan">01.</StyledTitle>
+                    <StyledTitle textColor="grey">Sobre mim</StyledTitle>
+                </div>
             </div>
-            <div>
+            <div className="aboutMeText">
                 <StyledParagraphOne>
                     Desde criança sou fascinado por computadores. E tendo sempre
                     como sonho trabalhar com algo relacionado, iniciei minha
-                    transição de carreira para a área da programação através do
-                    curso de desenvolvimento Full Stack oportunizado pela Kenzie
-                    Academy Brasil.
+                    transição de carreira(advocacia) para a área da programação
+                    através do curso de desenvolvimento Full Stack oportunizado
+                    pela Kenzie Academy Brasil.
                 </StyledParagraphOne>
                 <StyledParagraphOne>
                     Após 1 ano de curso, e mais de 30 projetos desenvolvidos,

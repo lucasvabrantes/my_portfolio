@@ -1,6 +1,9 @@
 import { StyledSidebar } from "../Sidebar/style";
 
-export const Sidebar = () => {
+interface SidebarProps {
+    isOpen: boolean;
+}
+export const Sidebar = ({ isOpen }: SidebarProps) => {
     return (
         <StyledSidebar>
             <a href="#about">Sobre</a>

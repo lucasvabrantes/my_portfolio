@@ -4,35 +4,36 @@ export const WelcomeSection = styled.section`
     display: flex;
     padding: 40px 50px 0px;
     width: 100%;
-    max-width: 100%;
     background: transparent;
     backdrop-filter: blur(3px);
     border: 1.5px solid var(--grey-300);
     border-top: none;
     border-bottom: none;
     margin-top: 99px;
-    position: relative;
+    height: 400px;
 
     @media (max-width: 768px) {
         flex-direction: column-reverse;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 0px;
+        height: 715px;
     }
 
     .welcomeTextAndPhoto {
         display: flex;
         flex-direction: column;
         width: 100%;
+        height: 350px;
 
         @media (max-width: 768px) {
             justify-content: center;
             align-items: center;
+            margin-top: 3rem;
         }
 
         div:first-child {
             display: flex;
             width: 100%;
-            gap: 1rem;
 
             @media (max-width: 768px) {
                 flex-direction: column;
@@ -53,6 +54,10 @@ export const WelcomeSection = styled.section`
                 width: 200px;
                 height: 230px;
                 padding: 1rem;
+
+                @media (max-width: 768px) {
+                    margin: 5rem 0px 0px 0px;
+                }
                 img {
                     width: 200px;
                     height: 200px;
@@ -74,11 +79,12 @@ export const WelcomeSection = styled.section`
         top: 140px;
 
         @media (max-width: 768px) {
-            top: 0px;
+            top: -20px;
             position: relative;
             max-width: 300px;
             justify-content: center;
         }
+
         p {
             max-width: 420px;
             margin: 0rem 1.5rem;
@@ -101,6 +107,11 @@ export const WelcomeSection = styled.section`
             margin: 0rem 1.5rem;
             transition: 0.5s;
 
+            @media (max-width: 768px) {
+                align-self: center;
+                margin-top: 1rem;
+            }
+
             img {
                 width: 20px;
                 height: 20px;
@@ -111,13 +122,8 @@ export const WelcomeSection = styled.section`
                 text-decoration: none;
             }
 
-            @media (max-width: 768px) {
-                align-self: center;
-            }
-
             &:hover {
-                /* background-color: var(--orange-100); */
-                filter: brightness(1.2);
+                background-color: var(--orange-100);
             }
         }
     }
@@ -133,8 +139,11 @@ export const ContactsContainer = styled.div`
 
     @media (max-width: 768px) {
         height: 100px;
+        position: relative;
+        top: 90px;
         flex-direction: row;
         justify-content: center;
+        padding: 0;
     }
 
     div {
@@ -158,7 +167,7 @@ export const EmailContainer = styled.div`
     p {
         transform: rotate(270deg);
         color: var(--cyan-900);
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         letter-spacing: 0.9px;
         margin: 92px 0px 0px 30px;
         font-family: "Inconsolata", monospace;
@@ -204,43 +213,82 @@ export const StyledLink = styled.a`
     }
 `;
 
-export const StyledWelcomeText = styled.h1`
+export const WelcomeTextContainer = styled.div`
     display: flex;
+    flex-direction: column;
     height: 80px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 2.3rem;
-    text-align: left;
-    font-family: var(--font-family);
-    color: var(--grey-300);
-    font-weight: 700;
-    margin: 1rem 0rem 0rem 1.5rem;
-
-    @media (max-width: 867px) {
-        font-size: 1.8rem;
-    }
-
-    @media (max-width: 768px) {
-        justify-content: center;
-    }
-
-    @media (max-width: 500px) {
-        font-size: 1.6rem;
-    }
 
     p {
         font-size: 2.3rem;
         font-family: var(--font-family);
         font-weight: 700;
         color: var(--cyan-900);
-        margin: 0;
+        margin: 1rem 0rem 0rem 1.5rem;
 
-        @media (max-width: 867px) {
-            font-size: 1.8rem;
+        @media (max-width: 768px) {
+            font-size: 1.6rem;
+            text-align: center;
+            margin: 0rem;
         }
 
-        @media (max-width: 500px) {
-            font-size: 1.6rem;
+        @media (max-width: 869px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    div:first-child {
+        display: flex;
+        flex-direction: colum;
+        gap: 1rem;
+
+        @media (max-width: 768px) {
+            gap: 0rem;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            text-align: left;
+            font-family: var(--font-family);
+            color: var(--grey-300);
+            font-weight: 700;
+            margin: 1rem 0rem 0rem 1.5rem;
+
+            @media (max-width: 768px) {
+                margin: 0rem;
+                text-align: center;
+                margin: 0rem;
+            }
+
+            @media (max-width: 500px) {
+                font-size: 1.6rem;
+                text-align: center;
+                margin: 0rem;
+            }
+
+            @media (max-width: 869px) {
+                font-size: 1.8rem;
+            }
+        }
+
+        p {
+            font-size: 2.3rem;
+            font-family: var(--font-family);
+            font-weight: 700;
+            color: var(--cyan-900);
+            margin: 1rem 1rem 0rem 0rem;
+
+            @media (max-width: 500px) {
+                font-size: 1.6rem;
+            }
+            @media (max-width: 768px) {
+                text-align: center;
+                margin: 0rem;
+            }
+
+            @media (max-width: 869px) {
+                font-size: 1.8rem;
+                text-align: center;
+            }
         }
     }
 `;

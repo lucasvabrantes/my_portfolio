@@ -10,12 +10,17 @@ export const StyledBody = styled.div`
 
     div:first-child {
         max-width: 900px;
+        min-width: 0px;
         margin: 0 auto;
     }
 
     .scrollHide {
         background: rgba(34, 184, 207, 0.35);
         padding: 10px 0px;
+
+        @media (max-width: 768px) {
+            padding: 15px 0px;
+        }
     }
 
     .numberChange {

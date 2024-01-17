@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
-    padding: 40px 50px;
+    padding: 30px 50px 0px 50px;
     gap: 2rem;
     width: 100%;
     max-width: 100%;
@@ -14,21 +14,40 @@ export const StyledSection = styled.section`
     border-bottom: none;
 
     .hardSkillsHeader {
-        width: 100;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        margin-left: 1rem;
+        width: 100%;
+        div {
+            display: flex;
+            height: 80px;
+            gap: 10px;
+            align-items: center;
+            margin-left: 16px;
+
+            h2:first-child {
+                font-size: 2.5rem;
+
+                @media (max-width: 500px) {
+                    font-size: 2rem;
+                }
+            }
+
+            h2:last-child {
+                font-size: 2.5rem;
+
+                @media (max-width: 500px) {
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 
     ul {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 85px);
         flex-direction: row;
         flex-wrap: wrap;
         gap: 3rem;
         margin-left: 1rem;
-        justify-content: flex-start;
+        justify-content: space-between;
 
         li {
             display: flex;

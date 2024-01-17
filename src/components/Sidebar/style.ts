@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-export const StyledSidebar = styled.div`
-    background-color: rgba(34, 184, 207, 0.35);
-    backdrop-filter: blur(3px);
+interface IStyledSideBarProps {
+    isOpen: boolean;
+}
+
+export const StyledSidebar = styled.div<IStyledSideBarProps>`
     display: flex;
     margin-top: 35px;
     padding: 10px 0px;
@@ -11,14 +13,14 @@ export const StyledSidebar = styled.div`
     align-items: center;
     width: 100%;
     padding: 20px 0px;
-    position: absolute;
-    animation: showUp 0.5s normal;
-    transition: 0.4s;
+    top: 55.24px;
+    animation: showUp 0.4s;
 
     a {
         color: white;
         text-decoration: none;
-        font-size: 3rem;
+        font-size: 3.5rem;
+        -webkit-text-stroke: 2px black;
         &:active {
             color: white;
         }
@@ -26,11 +28,21 @@ export const StyledSidebar = styled.div`
 
     @keyframes showUp {
         from {
-            transform: translateY(-100%);
+            transform: translateY(-10%);
         }
 
         to {
             transform: translateY(0%);
+        }
+    }
+
+    @keyframes showOut {
+        from {
+            transform: translateY(0%);
+        }
+
+        to {
+            transform: translateY(-150%);
         }
     }
 `;

@@ -3,8 +3,8 @@ import {
     ContactsContainer,
     EmailContainer,
     StyledLink,
-    StyledWelcomeText,
     WelcomeSection,
+    WelcomeTextContainer,
 } from "./style";
 import Image from "next/image";
 
@@ -49,10 +49,14 @@ export const WelcomeContainer = () => {
             </ContactsContainer>
             <div className="welcomeTextAndPhoto">
                 <div>
-                    <StyledWelcomeText>
-                        Oi, Me chamo&nbsp;<p>Lucas</p>
+                    <WelcomeTextContainer>
+                        <div>
+                            <h1>Oi, Me chamo</h1>
+                            <p>Lucas.</p>
+                        </div>
+
                         <p>Sou Desenvolvedor Web</p>
-                    </StyledWelcomeText>
+                    </WelcomeTextContainer>
 
                     <figure>
                         <Image

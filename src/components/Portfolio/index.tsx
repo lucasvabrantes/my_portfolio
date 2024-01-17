@@ -2,22 +2,43 @@ import { StyledSection } from "./style";
 import { StyledParagraphOne, StyledTitle } from "@/styles/typography";
 import { repositoriesDatabase } from "@/database";
 import Image from "next/image";
+import { useRef } from "react";
 
 export const Portfolio = () => {
+    const list = useRef<HTMLUListElement>(null);
+
+    const scrollLeft = () => {
+        list.current?.scrollBy({ left: 300, behavior: "smooth" });
+    };
+
+    const scrollRight = () => {
+        list.current?.scrollBy({ left: -300, behavior: "smooth" });
+    };
+
     return (
         <StyledSection id="portfolio">
             <div className="portfolioHeader">
-                <StyledTitle textColor="cyan">03.</StyledTitle>
-                <StyledTitle textColor="grey">Projetos</StyledTitle>
+                <div>
+                    <StyledTitle textColor="cyan">03.</StyledTitle>
+                    <StyledTitle textColor="grey">Projetos</StyledTitle>
+                </div>
             </div>
-            <div>
+            <div className="listContainer">
                 <StyledParagraphOne>
                     Abaixo deixo alguns projetos que desenvolvi durante meu
                     processo de estudo, bem como projetos independentes. Em
                     todos aplico os conceitos e princípios inerentes as boas
                     práticas de programação:
                 </StyledParagraphOne>
-                <ul>
+                <button className="rightArrow" onClick={scrollLeft}>
+                    <Image
+                        width={65}
+                        height={45}
+                        alt="seta para movimentar para a direita o portfólio"
+                        src="/images/arrowRight.png"
+                    />
+                </button>
+                <ul ref={list ? list : null}>
                     {repositoriesDatabase.map((repo) => {
                         return (
                             <li key={repo.id}>
@@ -37,16 +58,16 @@ export const Portfolio = () => {
                                         <Image
                                             src="/images/url.svg"
                                             alt=""
-                                            width={150}
-                                            height={150}
+                                            width={50}
+                                            height={50}
                                         />
                                     </a>
                                     <a href={repo.url_repo} target="_blank">
                                         <Image
                                             src="/images/github.svg"
                                             alt=""
-                                            width={250}
-                                            height={250}
+                                            width={50}
+                                            height={50}
                                         />
                                     </a>
                                 </div>
@@ -54,6 +75,14 @@ export const Portfolio = () => {
                         );
                     })}
                 </ul>
+                <button className="leftArrow" onClick={scrollRight}>
+                    <Image
+                        width={65}
+                        height={45}
+                        alt="seta para movimentar para a esquerda o portfólio"
+                        src="/images/arrowLeft.png"
+                    />
+                </button>
             </div>
         </StyledSection>
     );
