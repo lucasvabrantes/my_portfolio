@@ -3,7 +3,7 @@ import { StyledSidebar } from "../Sidebar/style";
 interface SidebarProps {
     isOpen: boolean;
 }
-export const Sidebar = ({ isOpen }: SidebarProps) => {
+export const Sidebar = () => {
     return (
         <StyledSidebar>
             <a href="#about">Sobre</a>

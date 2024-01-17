@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-interface IStyledSideBarProps {
-    isOpen: boolean;
-}
-
-export const StyledSidebar = styled.div<IStyledSideBarProps>`
+export const StyledSidebar = styled.div`
     display: flex;
     margin-top: 35px;
     padding: 10px 0px;
