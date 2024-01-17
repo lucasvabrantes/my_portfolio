@@ -45,6 +45,7 @@ export const StyledSection = styled.section`
 
     .aboutMeText {
         display: flex;
+        gap: 1rem;
         flex-direction: column;
     }
 `;
