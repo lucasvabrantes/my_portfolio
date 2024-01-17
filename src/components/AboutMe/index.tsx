@@ -14,9 +14,9 @@ export const AboutMe = () => {
                 <StyledParagraphOne>
                     Desde criança sou fascinado por computadores. E tendo sempre
                     como sonho trabalhar com algo relacionado, iniciei minha
-                    transição de carreira para a área da programação através do
-                    curso de desenvolvimento Full Stack oportunizado pela Kenzie
-                    Academy Brasil.
+                    transição de carreira(advocacia) para a área da programação
+                    através do curso de desenvolvimento Full Stack oportunizado
+                    pela Kenzie Academy Brasil.
                 </StyledParagraphOne>
                 <StyledParagraphOne>
                     Após 1 ano de curso, e mais de 30 projetos desenvolvidos,

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
-    padding: 40px 50px;
+    padding: 30px 50px 0px 50px;
     gap: 2rem;
     width: 100%;
     max-width: 100%;
@@ -14,7 +14,6 @@ export const StyledSection = styled.section`
     border-bottom: none;
 
     div > p {
-        margin-bottom: 3rem;
         margin-left: 1rem;
     }
 
@@ -45,16 +44,28 @@ export const StyledSection = styled.section`
         }
     }
 
+    .listContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .leftArrow {
+            margin-top: 2rem;
+            margin-left: 15px;
+        }
+    }
+
     ul {
         display: flex;
         height: 560px;
         justify-content: space-between;
         flex-direction: row;
-        margin-left: 1rem;
-        gap: 2rem;
+        gap: 1rem;
         width: 100%;
+        padding: 1rem;
         overflow-x: auto;
         overflow-y: hidden;
+        margin: 0;
 
         li {
             display: flex;
@@ -63,7 +74,7 @@ export const StyledSection = styled.section`
             justify-content: space-between;
             min-height: 400px;
             width: 330px;
-            height: 500px;
+            height: 490px;
             border: 1px solid var(--grey-300);
             padding: 1rem;
             border-radius: 10px;
@@ -71,11 +82,13 @@ export const StyledSection = styled.section`
             margin: 1rem;
 
             &:hover {
-                box-shadow: 10px 10px 80px -18px rgba(0, 0, 0, 0.5);
+                box-shadow: 10px 10px 50px -18px rgba(0, 0, 0, 0.5);
+                transform: scale(1.05);
             }
             .repoImg {
                 width: 100%;
                 height: 200px;
+                border-radius: 10px;
             }
 
             .repoName {
@@ -90,6 +103,7 @@ export const StyledSection = styled.section`
             }
             .footerItem {
                 display: flex;
+                width: 258px;
                 justify-content: space-between;
 
                 a img {

@@ -10,17 +10,20 @@ export const WelcomeSection = styled.section`
     border-top: none;
     border-bottom: none;
     margin-top: 99px;
+    height: 400px;
 
     @media (max-width: 768px) {
         flex-direction: column-reverse;
         justify-content: center;
-        margin-top: -20px;
+        margin-top: 0px;
+        height: 715px;
     }
 
     .welcomeTextAndPhoto {
         display: flex;
         flex-direction: column;
         width: 100%;
+        height: 350px;
 
         @media (max-width: 768px) {
             justify-content: center;
@@ -137,7 +140,7 @@ export const ContactsContainer = styled.div`
     @media (max-width: 768px) {
         height: 100px;
         position: relative;
-        top: -20px;
+        top: 90px;
         flex-direction: row;
         justify-content: center;
         padding: 0;
