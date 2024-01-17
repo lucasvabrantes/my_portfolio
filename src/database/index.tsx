@@ -11,7 +11,7 @@ export const repositoriesDatabase: Array<TRepoData> = [
     {
         id: 1,
         url_deploy: "https://kenziehub-lovat-tau.vercel.app/",
-        url_repo: "https://github.com/lucasvabrantes/Kenzie_Hub",
+        url_repo: "https://github.com/lucasvabrantes/kenziehub",
         img: "/images/kenziehub.png",
         name: "KenzieHub",
         description:
@@ -30,8 +30,9 @@ export const repositoriesDatabase: Array<TRepoData> = [
     },
     {
         id: 3,
-        url_deploy: "https://github.com/lucasvabrantes/NuKenzie",
-        url_repo: "https://github.com/lucasvabrantes/Nu-Kenzie",
+        url_deploy:
+            "https://kenzie-academy-brasil-developers-react-entrega-s1-nfzmm9bcj.vercel.app/",
+        url_repo: "https://github.com/lucasvabrantes/NuKenzie",
         img: "/images/nukenzie.png",
         name: "Nu Kenzie",
         description:
