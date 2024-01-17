@@ -20,6 +20,8 @@ export const StyledHeader = styled.header`
         padding: 15px 0px;
         background: rgba(34, 184, 207, 0.35);
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
         position: sticky;
     }
 `;

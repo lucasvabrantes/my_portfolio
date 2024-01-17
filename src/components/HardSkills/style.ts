@@ -18,16 +18,24 @@ export const StyledSection = styled.section`
         div {
             display: flex;
             height: 80px;
-            gap: 2rem;
+            gap: 10px;
             align-items: center;
             margin-left: 16px;
 
             h2:first-child {
-                width: 50px;
+                font-size: 2.5rem;
+
+                @media (max-width: 500px) {
+                    font-size: 2rem;
+                }
             }
 
             h2:last-child {
-                width: 300px;
+                font-size: 2.5rem;
+
+                @media (max-width: 500px) {
+                    font-size: 2rem;
+                }
             }
         }
     }
@@ -39,10 +47,7 @@ export const StyledSection = styled.section`
         flex-wrap: wrap;
         gap: 3rem;
         margin-left: 1rem;
-
-        @media (max-width: 768px) {
-            justify-content: center;
-        }
+        justify-content: space-between;
 
         li {
             display: flex;

@@ -2,8 +2,19 @@ import { StyledSection } from "./style";
 import { StyledParagraphOne, StyledTitle } from "@/styles/typography";
 import { repositoriesDatabase } from "@/database";
 import Image from "next/image";
+import { useRef } from "react";
 
 export const Portfolio = () => {
+    const list = useRef<HTMLUListElement>(null);
+
+    const scrollLeft = () => {
+        list.current?.scrollBy(-350, 0);
+    };
+
+    const scrollRight = () => {
+        list.current?.scrollBy(350, 0);
+    };
+
     return (
         <StyledSection id="portfolio">
             <div className="portfolioHeader">
@@ -19,7 +30,8 @@ export const Portfolio = () => {
                     todos aplico os conceitos e princípios inerentes as boas
                     práticas de programação:
                 </StyledParagraphOne>
-                <ul>
+                <button onClick={scrollLeft}>ESQUERDA</button>
+                <ul ref={list ? list : null}>
                     {repositoriesDatabase.map((repo) => {
                         return (
                             <li key={repo.id}>
@@ -56,6 +68,7 @@ export const Portfolio = () => {
                         );
                     })}
                 </ul>
+                <button onClick={scrollRight}>DIREITA</button>
             </div>
         </StyledSection>
     );

@@ -14,7 +14,7 @@ export const WelcomeSection = styled.section`
     @media (max-width: 768px) {
         flex-direction: column-reverse;
         justify-content: center;
-        margin-top: 0px;
+        margin-top: -20px;
     }
 
     .welcomeTextAndPhoto {
@@ -222,8 +222,14 @@ export const WelcomeTextContainer = styled.div`
         color: var(--cyan-900);
         margin: 1rem 0rem 0rem 1.5rem;
 
-        @media (max-width: 500px) {
+        @media (max-width: 768px) {
             font-size: 1.6rem;
+            text-align: center;
+            margin: 0rem;
+        }
+
+        @media (max-width: 869px) {
+            font-size: 1.8rem;
         }
     }
 
@@ -246,10 +252,18 @@ export const WelcomeTextContainer = styled.div`
 
             @media (max-width: 768px) {
                 margin: 0rem;
+                text-align: center;
+                margin: 0rem;
             }
 
             @media (max-width: 500px) {
                 font-size: 1.6rem;
+                text-align: center;
+                margin: 0rem;
+            }
+
+            @media (max-width: 869px) {
+                font-size: 1.8rem;
             }
         }
 
@@ -262,6 +276,15 @@ export const WelcomeTextContainer = styled.div`
 
             @media (max-width: 500px) {
                 font-size: 1.6rem;
+            }
+            @media (max-width: 768px) {
+                text-align: center;
+                margin: 0rem;
+            }
+
+            @media (max-width: 869px) {
+                font-size: 1.8rem;
+                text-align: center;
             }
         }
     }

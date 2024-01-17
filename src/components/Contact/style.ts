@@ -19,21 +19,62 @@ export const StyledSection = styled.section`
         div {
             display: flex;
             height: 80px;
-            gap: 2rem;
+            gap: 10px;
             align-items: center;
             margin-left: 16px;
 
             h2:first-child {
-                width: 50px;
+                font-size: 2.5rem;
+                @media (max-width: 500px) {
+                    font-size: 2rem;
+                }
             }
 
             h2:last-child {
-                width: 300px;
+                font-size: 2.5rem;
+                @media (max-width: 500px) {
+                    font-size: 2rem;
+                }
             }
         }
     }
+`;
 
-    .contact {
+export const StyledForm = styled.form`
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    height: 500px;
+    margin-left: 1rem;
+
+    input,
+    textarea {
+        border-radius: 10px;
+        border: 1px solid var(--grey-300);
+        outline: transparent;
+        transition: 0.4s;
+    }
+
+    input {
+        padding: 1rem;
+
+        &:focus {
+            box-shadow: 5px 4px 30px rgba(34, 184, 207, 0.4);
+        }
+    }
+
+    textarea {
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+        resize: none;
+
+        &:focus {
+            box-shadow: 5px 5px 25px rgba(34, 184, 207, 0.4);
+        }
+    }
+
+    button {
         display: flex;
         justify-content: center;
         align-items: center;

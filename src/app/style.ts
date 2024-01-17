@@ -10,6 +10,7 @@ export const StyledBody = styled.div`
 
     div:first-child {
         max-width: 900px;
+        min-width: 0px;
         margin: 0 auto;
     }
 

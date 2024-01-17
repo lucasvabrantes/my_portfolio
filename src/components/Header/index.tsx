@@ -25,7 +25,6 @@ export const Header = ({ colorChange }: THeaderProps) => {
 
     return (
         <StyledHeader className={colorChange ? "scrollHide" : ""}>
-            {menuBars && <Sidebar isOpen={menuBars} />}
             <StyledNav>
                 <button onClick={toggleMode} className="bars show">
                     {menuBars ? (
@@ -69,6 +68,11 @@ export const Header = ({ colorChange }: THeaderProps) => {
                     <p> &lt;contato&gt; </p>
                 </a>
             </StyledNav>
+            {menuBars && (
+                <nav>
+                    <Sidebar isOpen={menuBars} />
+                </nav>
+            )}
         </StyledHeader>
     );
 };

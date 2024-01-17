@@ -1,5 +1,5 @@
 import { StyledParagraphOne, StyledTitle } from "../../styles/typography";
-import { StyledSection } from "./style";
+import { StyledForm, StyledSection } from "./style";
 
 export const Contact = () => {
     return (
@@ -14,12 +14,31 @@ export const Contact = () => {
             <StyledParagraphOne>
                 Fique a vontade para me mandar mensagem caso tenha alguma
                 pergunta ou projeto para realizar. Mas se quiser apenas dar um
-                "Oi" e conversar sobre programação. Fique a vontade também para
-                me contactar.
+                "Oi" e conversar sobre programação, também é bem-vindo.&#128512;
             </StyledParagraphOne>
-            <a href="mailto:lucasbrts@icloud.com" className="contact">
-                Mandar E-mail
-            </a>
+            <StyledForm
+                action="https://formsubmit.co/lucaslvsa@hotmail.com"
+                method="POST"
+            >
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Digite aqui seu nome"
+                    required
+                />
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Digite aqui seu e-mail"
+                    required
+                />
+                <textarea
+                    name="message"
+                    placeholder="Gostaria de contratá-lo para realização de um projeto..."
+                    required
+                />
+                <button type="submit">Enviar</button>
+            </StyledForm>
         </StyledSection>
     );
 };

@@ -5,7 +5,7 @@ interface SidebarProps {
 }
 export const Sidebar = ({ isOpen }: SidebarProps) => {
     return (
-        <StyledSidebar isOpen={isOpen}>
+        <StyledSidebar>
             <a href="#about">Sobre</a>
             <a href="#skills">Skills</a>
             <a href="#portfolio">Projetos</a>
