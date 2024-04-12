@@ -13,7 +13,7 @@ export const Header = ({ colorChange }: THeaderProps) => {
         setMenuBars(!menuBars);
     };
 
-    const detectScreenWidth = () => {
+    const detectScreenWidth = (): void => {
         if (window.screen.width >= 769) {
             setMenuBars(false);
         }

@@ -19,6 +19,7 @@ export const Contact = () => {
             <StyledForm
                 action="https://formsubmit.co/lucaslvsa@hotmail.com"
                 method="POST"
+                target="_blank" 
             >
                 <input
                     type="text"
@@ -37,8 +38,15 @@ export const Contact = () => {
                     placeholder="Gostaria de contratá-lo para realização de um projeto..."
                     required
                 />
+                <input
+                    type="hidden"
+                    name="_next"
+                    value="https://lucasabrantes.vercel.app"
+                ></input>
                 <button type="submit">Enviar</button>
             </StyledForm>
+
+            
         </StyledSection>
     );
 };
